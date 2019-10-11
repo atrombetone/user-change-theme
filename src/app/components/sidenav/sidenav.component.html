@@ -1,0 +1,13 @@
+<!-- Side navigation -->
+<div class="sidenav" [ngClass]="classe">
+  <a href="#">Home</a>
+  <a href="#">Produtos</a>
+  <a href="#">Clientes</a>
+  <a href="#">Contato</a>
+  <button (click)="trocarTema()">Trocar Tema</button>
+</div>
+
+<!-- Page content -->
+<div class="main" [ngClass]="'content-' + classe" >
+  <router-outlet></router-outlet>
+</div>
